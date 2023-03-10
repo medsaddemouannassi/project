@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:h2:mem:user-db
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  cloud:
+    discovery:
+      enabled: true
+  jpa:
+    show-sql: true

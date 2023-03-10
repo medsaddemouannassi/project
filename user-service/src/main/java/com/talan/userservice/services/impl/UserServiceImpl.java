@@ -22,7 +22,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserResponseDTO getUserById(Long id) {
+    public UserResponseDTO findUserById(Long id) {
         return ModelMapperConverter.map(userRepo.findById(id).isPresent() ? userRepo.findById(id).get(): null, UserResponseDTO.class);
     }
 

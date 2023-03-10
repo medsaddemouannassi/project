@@ -5,8 +5,6 @@ r
 Buser-service/src/main/java/com/talan/userservice/enums/Gender.java,5\b\5b6c60f89ff740cfcae5267f6a436185fbbf72ef
 {
 Kuser-service/src/main/java/com/talan/userservice/repositories/UserRepo.java,5\8\58aee1450faf88c8d4c7ec0df6825879090cfba8
-z
-Juser-service/src/main/java/com/talan/userservice/services/UserService.java,2\b\2b771fc44b849fee12c979b0523dee292b5e10f9
 ‚
 Ruser-service/src/main/java/com/talan/userservice/helpers/ModelMapperConverter.java,1\6\16275a97803b9372a5cd508fb950863595d34381
 x

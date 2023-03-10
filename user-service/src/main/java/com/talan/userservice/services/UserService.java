@@ -5,6 +5,6 @@ import com.talan.userservice.dto.UserResponseDTO;
 
 public interface UserService {
     UserResponseDTO signup(UserRequestDTO userDTO);
-    UserResponseDTO getUserById(Long id);
+    UserResponseDTO findUserById(Long id);
     void deleteUserById(Long id);
 }

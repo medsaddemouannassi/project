@@ -21,7 +21,7 @@ public class UserServiceApplication {
     CommandLineRunner start(UserService userService) {
         return args -> {
             for (int i = 1; i <= 5; i++) {
-                userService.signup(new UserRequestDTO("U" + i, "UU" + i, 30 + i, Math.random() > 0.5 ? Gender.MALE : Gender.FEMALE, "u" + i + "@test.com", "u" + i));
+                userService.register(new UserRequestDTO("U" + i, "UU" + i, 30 + i, Math.random() > 0.5 ? Gender.MALE : Gender.FEMALE, "u" + i + "@test.com", "u" + i));
             }
         };
     }

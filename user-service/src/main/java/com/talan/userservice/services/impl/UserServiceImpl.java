@@ -17,13 +17,13 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public UserResponseDTO signup(UserRequestDTO userDTO) {
+    public UserResponseDTO register(UserRequestDTO userDTO) {
         return ModelMapperConverter.map(userRepo.save(ModelMapperConverter.map(userDTO, User.class)), UserResponseDTO.class);
     }
 
     @Override
     public UserResponseDTO findUserById(Long id) {
-        return ModelMapperConverter.map(userRepo.findById(id).isPresent() ? userRepo.findById(id).get(): null, UserResponseDTO.class);
+        return ModelMapperConverter.map(userRepo.findById(id).orElseThrow(), UserResponseDTO.class);
     }
 
     @Override

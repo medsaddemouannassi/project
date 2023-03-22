@@ -7,6 +7,8 @@ import java.util.List;
 public interface MessageService {
     Message findMessageById(Long id);
     Message findMessageByUserId(Long id);
+    List<Message> findAllBySenderIdAndRecipientId(Long senderId, Long recipientId);
     List<Message> findMessages();
-    Message save(Message message);
+    Message sendMessage(Message message);
+    void deleteMessageById(Long messageId);
 }

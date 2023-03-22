@@ -1,10 +1,11 @@
 package com.talan.messageservice.entities;
 
-import com.talan.messageservice.model.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.Date;
 
 @Entity
 @Data
@@ -16,7 +17,8 @@ public class Message {
     private Long id;
     private String content;
     private Long senderId;
-    private Long receiverId;
+    private Long recipientId;
+    private Date time = new Date(System.currentTimeMillis());
 //    @Transient
 //    private User sender;
 //    @Transient

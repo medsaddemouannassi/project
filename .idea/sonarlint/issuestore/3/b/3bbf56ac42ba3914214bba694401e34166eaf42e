@@ -1,0 +1,11 @@
+
+b
+java:S1128"@Remove this unused import 'com.talan.userservice.entities.User'.(Š›Ğıÿÿÿÿ8ìüÙì0
+\
+java:S1128"?Remove this unused import 'jakarta.persistence.GeneratedValue'.(‘ŒÇŒ8íüÙì0
+\
+java:S1128"?Remove this unused import 'jakarta.persistence.GenerationType'.(²ºëÊ8íüÙì0
+P
+java:S1128"3Remove this unused import 'jakarta.persistence.Id'.(š¨ô 8íüÙì0
+\
+java:S1128":Remove this unused import 'jakarta.persistence.Transient'.(ÂÛÿØıÿÿÿÿ8íüÙì0
